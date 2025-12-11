@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-primary: #FF69B4;
+  --pink-light: #FFB6C1;
+  --pink-dark: #DB7093;
+  --gold: #FFD700;
+  --cream: #FFF8F0;
+  --purple-light: #E6E6FA;
+  --text-dark: #4A4A4A;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--pink-light) 50%, var(--purple-light) 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pink-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pink-dark);
+}
